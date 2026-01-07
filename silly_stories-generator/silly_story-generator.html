@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="silly_story-generator-style.css">
+</head>
+<body>
+  <div>
+  <label for="custom-name">Enter custom name:</label>
+  <input id="custom-name" type="text" placeholder="" />
+</div>
+<fieldset>
+  <legend>Choose locale:</legend>
+  <label for="us">US</label>
+    <input id="us" type="radio" name="uk-us" value="us" checked />
+    <label for="uk">UK</label>
+    <input id="uk" type="radio" name="uk-us" value="uk" />
+</fieldset>
+<div>
+  <button class="generate">Generate random story</button>
+</div>
+
+<div>
+  <button class="delete">delete current story</button>
+</div>
+
+<p class="story"></p>
+
+<div>
+  <button class="save">save story</button>
+</div>
+
+<script src="silly_story-generator-java.js"> </script>
+<div>
+  <label>choose font</label>
+  <select class="font-selector">
+    <option value="system-ui">Default</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Comic Sans MS">Comic Sans</option> 
+  </select>
+</div>
+</body>
+</html>
